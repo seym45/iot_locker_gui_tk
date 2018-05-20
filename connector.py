@@ -6,7 +6,7 @@ port = 'COM8'
 def get_value(var):
     ret_val = ''
     try:
-        ser = serial.Serial('COM8', 9600, timeout=1)
+        ser = serial.Serial(port, 9600, timeout=1)
         var = 'deligram' + var + '\n'
         ser.write(var.encode())
         ret_val = ser.readline()
