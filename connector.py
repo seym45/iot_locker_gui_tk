@@ -1,6 +1,7 @@
 import serial
 import serial.tools.list_ports
 
+port = 'COM8'
 
 def get_value(var):
     ret_val = ''
