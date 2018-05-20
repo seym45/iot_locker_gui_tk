@@ -2,7 +2,7 @@ import threading
 import tkinter.font
 from tkinter import *
 
-from iot_locker_gui.connector import get_value
+from connector import get_value
 
 root = Tk()
 root.overrideredirect(True)
